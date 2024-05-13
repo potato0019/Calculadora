@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(55, 70, 97);
+}
+.header{
+    display: flex;
+    width: 90vw;
+    color: white;
+}
+h2{
+    width: 30%;
+    font-size: 30px;
+}
+p{
+    width: 30%;
+    text-align: right;
+}
+.main input{
+    width: 90vw;
+    height: 90px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(19, 21, 43);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: hsl(0, 0%, 100%);
+    font-size: 60px;
+    padding: 10px;
+    text-align: right;
+}
+.main input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.main input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+.footer{
+    background-color: rgb(41, 41, 71);
+    border-radius: 10px;
+    padding-top: 1px;
+}
+.linha01,
+.linha02,
+.linha03,
+.linha04{
+    margin: 10px 10px 10px 10px;
+}
+button{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.linha05{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.del{
+    background-color: rgb(137, 112, 160);
+    color: white;
+    font-size: 30px;
+}
+.reset{
+    width: 163px;
+    margin-right: 2px;
+    background-color: rgb(137, 112, 160);
+    color: white;
+}
+.igual{
+    width: 163px;
+    margin-left: 2px;
+    background-color: rgb(151, 33, 33);
+    color: white;
+}
+@media screen and (min-width: 600px) {
+    .header{
+        width: 30vw;
+    }
+    .main input{
+        width: 30vw;
+    }
+    button{
+        width: 110px;
+    }
+    .reset,
+    .igual{
+        width: 223px;
+    }
+}
